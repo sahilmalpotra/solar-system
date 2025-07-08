@@ -8,11 +8,11 @@ on:
       - 'feature/*'
 
 jobs:
-    first-job:
-      runs-on: ubuntu-latest
-      steps:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: list files
-        uses: ls      
+      - name: List files
+        run: ls -la
